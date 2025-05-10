@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: aliceblue; */
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: 24px 2fr 15dvh 24px;
+  grid-template-columns: 20px 2fr 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (width >= 992px) {
+  .main-container {
+    grid-template-rows: 24px 10dvh 2fr 24px;
+    grid-template-columns: 30dvw 40dvw 30dvw;
+  }
+}
+
+.button-left {
+  position: absolute;
+  bottom: 50dvh;
+  left: 5%;
+  padding: 12px 13.34px; /* to make it 40x40 or as close as possible */
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(33, 33, 33, 0.3);
+  color: white;
+}
+
+.button-left:hover {
+  cursor: pointer;
+  background-color: rgb(33, 33, 33, 0.5);
+  color: white;
+}
+
+.button-right {
+  position: absolute;
+  bottom: 50dvh;
+  right: 5%;
+  padding: 12px 13.34px; /* to make it 40x40 or as close as possible */
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(33, 33, 33, 0.3);
+  color: white;
+}
+
+.button-right:hover {
+  cursor: pointer;
+  background-color: rgb(33, 33, 33, 0.5);
+  color: white;
+}
+
+.hide-button {
+  position: absolute;
+  bottom: 20dvh;
+  left: 50%;
+  margin-left: -20px;
+  padding: 12px 13.34px; /* to make it 40x40 or as close as possible */
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(33, 33, 33, 0.3);
+  color: white;
+}
+
+.hide-button:hover {
+  cursor: pointer;
+}
+
+/* got the idea of adding a negative margin from here https://thoughtbot.com/blog/positioning#:~:text=Centering%20using%20absolute%20position&text=To%20center%20an%20element%20using,50%25%20line%20of%20the%20parent. */
+
+@media (width >= 992px) {
+  .hide-button {
+    visibility: hidden;
+  }
+}
+
+.hide-button-large {
+  display: none;
+  background-color: rgb(33, 33, 33, 0.3);
+  color: white;
+}
+
+.hide-button-large:hover {
+  cursor: pointer;
+  background-color: rgb(33, 33, 33, 0.5);
+  color: white;
+}
+
+@media (width >= 992px) {
+  .hide-button-large {
+    display: inline-block;
+    position: absolute;
+    top: 15dvh;
+    left: 50%;
+    margin-left: -20px;
+    padding: 12px 13.34px; /* to make it 40x40 or as close as possible */
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+/* .hide-button-bottom {
+  bottom: 5dvh;
+} */
+
+#thumbnail-container {
+  display: grid;
+  display: flex;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: 15dvh;
+  overflow: auto;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+@media (width >= 992px) {
+  #thumbnail-container {
+    /* overflow: scroll; */
+    grid-row: 2 / 3;
+    width: 40dvw;
+    height: 10dvh;
+  }
+}
+
+.gallery-img {
+  max-height: 20dvh;
+}
+
+.gallery-img:hover {
+  cursor: pointer;
+}
+
+#largeimg-container img {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#largeimg-container {
+  height: 100%;
+  width: 100dvw;
+}
