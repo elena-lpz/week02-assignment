@@ -1,10 +1,6 @@
 console.info("Hello World");
 
 //TODO Create an array with the images we want to use
-// srcSet: ,
-// imgName: ,
-// width:,
-// height:
 
 const images = [
   {
@@ -218,19 +214,3 @@ hideButtonLarge.addEventListener("click", function () {
     hideButtonLarge.style.setProperty("top", "3dvh");
   }
 });
-
-// buttonLeft.addEventListener("click", function() {
-//     for (let i = 0; i < 5; i++) {
-//   console.log("Log the current iteration", i);
-// }
-// }
-// createFullscreenImage(images[0]);
-
-// function nextImage(index) {
-//     currentImageIndex += index
-
-//     if (currentImageIndex >= images.length) currentImageIndex = 0
-//     if (currentImageIndex < 0) currentImageIndex = images.length - 1
-//     console.log(currentImageIndex)
-//     updateDisplayImage(images[currentImageIndex])
-// }

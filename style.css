@@ -7,12 +7,14 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: 24px 2fr 15dvh 24px;
+  grid-template-rows: 32px 2fr 15dvh 32px;
+  /* bottom and top margins weree originally smaller but checked on my phone after deploying and the navigation bar that comes with the phone was covering part of it */
   grid-template-columns: 20px 2fr 20px;
   height: 100vh;
   overflow: hidden;
 }
 
+/* used this size so that the thumbnail container also looks good on tablets */
 @media (width >= 992px) {
   .main-container {
     grid-template-rows: 24px 10dvh 2fr 24px;
