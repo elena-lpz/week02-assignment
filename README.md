@@ -29,13 +29,13 @@ https://elena-lpz.github.io/week02-assignment/
 
 - I used scrset to display smaller images on smaller screens
 - I used aria labels and aria-live
-- I added tab fucntionality to the images inside the thumbnail container to enhance navigation
+- I added tab functionality to the images inside the thumbnail container to enhance navigation
 - I added several on over effects to enhance User experience
-- I added a button that changes on click (from arrow up to down and viceversa) and hides and unhides the thumbnail container so that is not in the way.
+- I added a button that changes on click (from arrow up to down and vice versa) and hides and unhides the thumbnail container so that is not in the way.
 - I added a favicon
 - I added Fontawesome icons
 
-# I tried but could not acchieve/would like help with
+# I tried but could not achieve/would like help with
 
 - I would like to know how to transition between images smoothly
 - How to highlight selected images (more comments on this in the app.js)
