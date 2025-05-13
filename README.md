@@ -2,7 +2,7 @@
 
 An accessible image gallery following a mobile-first approach and responsive design principles.
 
-# Life demo
+# Live demo
 
 https://elena-lpz.github.io/week02-assignment/
 
